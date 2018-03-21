@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="name">Chris Volkernick</string>
     <string name="school">Neumont University</string>
+    <string name="location">Atlanta, GA</string>
+    <string name="toast">Make Toast</string>
 </resources>
