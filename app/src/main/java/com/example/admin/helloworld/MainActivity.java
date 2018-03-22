@@ -1,5 +1,7 @@
 package com.example.admin.helloworld;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Toast.makeText(getApplication(),"Mmm...Toasty.",3).show();
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://www.linkedin.com/in/chrisvolkernick"));
+        startActivity(intent);
     }
 }
